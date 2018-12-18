@@ -69,13 +69,12 @@ function expandBurger(){
 	var menu_icon = document.getElementById("menu-icon");
 	var static_header = document.getElementById("static_header");
 	var u_list = document.getElementById("u_list");
-	var menu_social = document.getElementById("menu-social");
 	var menu_list = document.getElementById("static_header").querySelectorAll("nav ul li");
 	menu_icon.classList.toggle("close");
 	static_header.classList.toggle("open_menu");
 	u_list.classList.toggle("hide_nav");
 	u_list.classList.toggle("side_nav");
-	menu_social.classList.toggle("social");
+
 	// for(i=0; i < menu_list.length; i++){
 		// menu_list[i].style.display = "block";
 		// }
