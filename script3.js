@@ -7,6 +7,7 @@ var imageName;
 var elmnt;
 window.onbeforeunload = function () {
 	window.scrollTo(0, 0);
+	
 }
 window.onload = function() {
 	// document.getElementById('title').style.opacity = '1';
@@ -14,6 +15,7 @@ window.onload = function() {
 	// document.getElementById('sub_title').style.opacity = '1';
 	// var elmnt = document.getElementById('container');
 	// pc = elmnt.offsetTop;
+
 }
 
 //document.addEventListener("scroll", scrollanim);
@@ -28,7 +30,7 @@ document.addEventListener("scroll", function(){
 	// var con3Offset = document.getElementById('bgimg-1').offsetTop;
 	document.getElementById("bgimg-1").style.backgroundPosition = "center " +  -(window.pageYOffset/2)+"px";
 	
-	if(newPos >= document.getElementById("section-1").offsetTop/3){
+	if(newPos >= document.getElementById("section-1").offsetTop/3 || window.outerWidth <= 768){
 		hideMenu();
 		showBurger();
 	}
@@ -162,14 +164,23 @@ function colourise(id){
 function windowResize() {
     var w = window.outerWidth;
     var h = window.outerHeight;
-    var txt = "Window size: width=" + w + ", height=" + h;
-    document.getElementById("sub_title").innerHTML = txt;
-	document.getElementById("con1").style.height = (w/2.82);
+	if(w <= 768){
+		hideMenu();
+		showBurger();
+	}
+	else{
+		showMenu();
+		hideBurger();
+	}
+    // var txt = "Window size: width=" + w + ", height=" + h;
+    // document.getElementById("sub_title").innerHTML = txt;
+	// document.getElementById("con1").style.height = (w/2.82);
 }
 
 function stats(){
 	
-	alert("newpos:  " + window.pageYOffset + "height" + document.getElementById("section-1").offsetTop/3 + "sectionnum:  " + section);
+	// alert("newpos:  " + window.pageYOffset + "height" + document.getElementById("section-1").offsetTop/3 + "sectionnum:  " + section);
+	alert("window width and height" + window.outerWidth + "height " + window.outerHeight);
 }
 
 	
