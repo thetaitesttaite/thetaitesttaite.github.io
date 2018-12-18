@@ -1,0 +1,556 @@
+@import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+  background-color: #282E34;
+}
+
+header{
+	
+	width: 100%;
+	
+
+}
+/* refactor becuase it only incudes nav bar
+ie its not a static header anymore its just a navbar/menu container */
+#static_header{
+	position: fixed;
+	width: auto;
+	height: 0%;
+	z-index: 15;
+	right: 0;
+	padding: 1% 2% 0 0;
+	background-color: black;
+	/* transition: all 1s ease; */
+	/* pointer-events: none; */
+	
+
+}
+#static_header.open_menu{
+	height: 100%;
+	transition: all 1s ease;
+	background-color: #111;
+	width: 35%;
+}
+#header_content{
+	position: relaitve;
+	
+}
+#logo{
+	position: fixed;
+	z-index: 15;
+	/* margin: 40px -20px; */
+	float: left;
+	width: 15vh;
+	height: 10vh;
+	background: url(img/rp.png) no-repeat center;
+	background-size: 90%;
+	/* margin: 1%; */
+	
+	/*postion relative*/
+}
+#menu-icon{
+	margin: 0 -50%; /*padding interfering with margin on both */
+	float: right;
+	width: 7vh;
+	height: 8vh;
+	/* padding: 0px -20px; */
+	display: block;
+	transition: all 2s ease;
+	opacity: 1;
+	background-color: blue;
+	top: 0;
+	position: relaitve;
+	padding: 2%;
+
+}
+
+#menu-icon:hover{
+	cursor: pointer;
+}
+.line{
+	background: white;
+	width: 10%;
+	height: 1vh;
+	/* margin: 8px auto; */
+	position: absolute;
+	border-radius:50px;
+	pointer-events: none;
+	transition: all cubic-bezier(0.31,-0.67, 0.57, 1.9) 0.45s;
+	
+}
+.linetop{
+	margin-top: -2%;
+}
+.linemid{
+	margin-top: 2%;
+}
+.linebot{
+	margin-top: 6%;
+}
+#menu-icon.close{
+	/* float: left; */
+	/* margin: 0px; */
+	/* transition: all 2s ease; */
+	
+}
+#menu-icon.show{
+	opacity: 1;
+	margin: 0vh 0vh;
+	
+}
+#menu-icon.close .linetop{
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Safari */
+	-o-transform: rotate(45deg);
+    transform: rotate(45deg);
+	margin-top: 4%;
+	width: 15%;
+	/* -moz-transform: translate(4); */
+	/* -ms-transform: rotate(45deg); /* IE 9 */ 
+    /* -webkit-transform: rotate(45deg); /* Safari */ 
+	/* -o-transform: rotate(45deg); */
+   
+}
+#menu-icon.close .linemid, #menu-icon.close .linebot{
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Safari */
+	-o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+	margin-top: 4%;
+	width: 15%;
+	/* -moz-transform: translate(4); */
+	/* -ms-transform: rotate(45deg); /* IE 9 */ 
+    /* -webkit-transform: rotate(45deg); /* Safari */ 
+	/* -o-transform: rotate(45deg); */
+   
+}
+
+nav{
+	position: relative;
+	z-index: 13;
+}
+ul{
+	list-style-type: none;
+	
+}
+
+@keyframes flash{
+	0% { color: #e5f6fc;  }
+	50% { color: #627491; }
+	100% { color: #e5f6fc; }
+}
+
+
+#u_list{
+	float: left;
+	position: relative;
+	display: block;
+	font-size: 4vh;
+	/* right: 10px; */
+	/* margin-right: 10px; */
+	opacity: 1;
+	transition: all 1s ease;
+	top: 0px;
+	/* background-color: red; */
+	width: 120%;
+	
+}
+/* #u_list.side_nav{ */
+	/* top: 0px; */
+	/* opacity: 1; */
+	
+/* } */
+#u_list.hide_nav{
+	top: -200px;
+	opacity: 0;
+	visibility: hidden;
+}
+nav ul li{
+	display: inline-block;
+	
+	/* position: relaitve; */
+	/* padding: 15px; */
+	/* float: right; */
+
+	/* position: relative; */
+	/* font-size: 4vh; */
+	/* margin-right: 10px; */
+
+	/* opacity: 1; */
+	/* transition: all 2s ease; */
+}
+#u_list.side_nav li{
+	display: block;
+	/* padding: 15px; */
+	/* background-color: blue; */
+	margin-left: -40px;
+	
+}
+#u_list.side_nav li:hover{
+	display: block;
+	/* padding: 15px; */
+	/* background-color: #282E34; */
+	margin-left: -40px;
+	background-color: #282E34;
+	
+}
+
+
+nav ul li a:hover{
+	font-weight: 900;
+	/* font-size: 120%; */
+	animation: flash linear 3.25s infinite;
+	color: white;
+}
+nav ul li:hover{
+	
+}
+
+nav ul li a:link{
+	text-decoration: none;
+	color: #e5f6fc;
+}
+nav ul li a:visited{
+	color: #e5f6fc;
+}
+
+#title{
+
+	position: absolute;
+	top: 50%;
+	width: 100%;
+
+	text-align: center;
+	color: #FFF;
+	opacity: 1;
+
+	animation: fadeIn 3s ease-out forwards;
+	/* overflow: none; */
+	/* padding: 1%; */
+
+	/* animation-delay: 0.5s; */
+	/* transition: 6s letter-spacing; */
+	font-weight: 700;
+	font-size: 5vh;
+	/* perhaps implement titles into h1 h2 elements for vice versa*/
+}
+@keyframes fadeIn{
+	0%{
+	letter-spacing: -2vh;
+    opacity: 0;
+	}
+	20%{
+    letter-spacing: 3vh;
+    opacity: 1;
+	}
+	100%{
+    letter-spacing: 5vh;
+    opacity: 1;
+	}
+}
+#sub_title{
+	position: relative;
+	opacity: 1;
+	transition: 1s opacity;
+}
+
+
+
+#bgimg-1, #bgimg-2, #bgimg-3, #bgimg-4{
+  position: relative;
+
+  background-attachment: fixed;
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+#bgimg-1 {
+	background-position: center 0px;
+	min-height: 100%;
+	background-image: url("img/forestLake.jpg");
+	/* work around for padding on first div */
+	/* margin-top: -100px; */
+  }
+
+/* .bgimages{ */
+	/* width: 100%; */
+	/* position: fixed; */
+	
+	
+/* } */
+#bgimg-2 {
+	background-position: center;
+	background-image: url("img/droneCity.jpg");
+	min-height: 300px;
+	height: 20%;
+}
+
+#bgimg-3 {
+	background-position: center 0px;
+  background-image: url("img/people.jpg");
+  min-height: 100%;
+}
+#bgimg-4 {
+	background-position: center 0px;
+	background-image: url("img/forestLake.jpg");
+	min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+
+}
+/* title for background window */
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  /* padding: 18px; */
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+.gallery{
+	position: relaitve;
+	/*this is to disregard new line margin for inline block*/
+	font-size: 0;
+	/* margin-right: -4px;  */
+	/*find out whats going on here*/
+	display: inline-block;
+	/* position: relaitve; */
+	/* background-color: blue; */
+	/* float: left; */
+	text-align: center;
+	height: 200px;
+	width: 350px;
+	
+	/* padding: 5%; */
+
+}
+.gallery a img{
+	/*new line margin for inline block */
+	font-size: 16px;
+	max-width: 100%;
+	max-height : 80%;
+	filter: grayscale(100%);
+	transition: filter 0.8s;
+
+}
+
+.gallery a img:hover{
+	filter: grayscale(0%);
+	transition: filter 0.8s;
+}
+.social{
+	list-style-type: none;
+	text-align: center;
+	opacity: 1;
+}
+.social li{
+	display: inline;
+	font-size: 100px;
+	padding: 5%;
+	color: white;
+	
+}
+.social i{
+	/* font-size: 460%; */
+	margin: 1%;
+	/* padding: 5%; */
+	color: #F5F5F5;
+}
+.social i:hover{
+	color: #111;
+	transition: color 0.5s;
+}
+nav ul li a:link{
+	text-decoration: none;
+	color: #e5f6fc;
+}
+nav ul li a:visited{
+	color: #e5f6fc;
+}
+
+#section-1, #section-2, #section-3{
+	position: relative;
+	color: white;
+	background-color: #282E34;
+	text-align: center;
+	padding-left: 50px;
+	padding-right: 50px;
+	font: 30px;	
+}
+
+
+#section-1 p, #section-2 p, #section-3 p{
+	opacity: 0;
+	transition: opacity 2s;
+}
+
+
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 50px "Lato", sans-serif;
+  color: #111;
+  text-align:center;
+  position: relative;
+}
+
+/* ////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////// */
+				/*portfolio page*/
+/* ////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////// */
+
+
+.carousel {
+  position: relative;
+  height: 400px;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+  /* background-color: blue; */
+}
+.carousel div {
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 1;
+  background-color: #111;
+}
+.carousel div img {
+  width: 400px;
+  transition: width 1s;
+}
+.carousel div p {
+  position: relaitve;
+  color: white;
+  width: 400px;
+  transition: width 1s;	
+}
+.carousel div.hideLeft {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+.carousel div.hideLeft img, .carousel div.hideLeft p {
+  width: 200px;
+}
+.carousel div.hideRight {
+  left: 100%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+.carousel div.hideRight img, .carousel div.hideRight p {
+  width: 200px;
+}
+.carousel div.prev {
+  z-index: 5;
+  left: 30%;
+  transform: translateY(50px) translateX(-50%);
+}
+.carousel div.prev img, .carousel div.prev p {
+  width: 300px;
+}
+.carousel div.prevLeftSecond {
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+.carousel div.prevLeftSecond img, .carousel div.prevLeftSecond p {
+  width: 200px;
+}
+.carousel div.selected {
+  z-index: 10;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+}
+.carousel div.next {
+  z-index: 5;
+  left: 70%;
+  transform: translateY(50px) translateX(-50%);
+}
+.carousel div.next img, .carousel div.next p {
+  width: 300px;
+}
+.carousel div.nextRightSecond {
+  z-index: 4;
+  left: 85%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+.carousel div.nextRightSecond img, .carousel div.nextRightSecond p {
+  width: 200px;
+}
+
+.buttons {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+}
+
+/* ////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////// */
+				/*Case Studies*/
+/* ////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////// */
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 50%;
+	
+  position: relaitve;
+  display: flex;
+  justify-content: center;
+    align-items: center;
+    overflow: hidden	
+}
+.column img:hover{
+	transform: scale(1.5);	
+}
+/* .column p:hover{ */
+	/* transform: scale(1.5); */
+/* } */
+.column p{
+	pointer-events: none;
+}
+.row:after {
+  display: table;
+  clear: both;
+}
+
+ 
+ .column img{
+	width: 100%;
+	transition: transform 2s;
+ }
+
+
+/* Turn off parallax scrolling for tablets and phones */
+@media screen and (max-width: 768px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+	/* .gallery{ */
+		/* width: 50%; */
+	/* } */
+	#menu-icon{
+	margin: 0px -100px; /*padding interfering with margin on both */
+	opacity: 1;
+	}
+	
+}
