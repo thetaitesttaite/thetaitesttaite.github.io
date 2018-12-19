@@ -332,9 +332,11 @@ nav ul li a:visited{
 	text-align: center;
 	height: 200px;
 	width: 350px;
-	
-	/* padding: 5%; */
-
+	/* padding-left: 100px; */
+	/* margin: 3px; */
+	background-color: red;
+	object-fit: cover;
+	margin: 3%;
 }
 .gallery a img{
 	/*new line margin for inline block */
@@ -343,7 +345,7 @@ nav ul li a:visited{
 	max-height : 80%;
 	filter: grayscale(100%);
 	transition: filter 0.8s;
-
+	/* padding: 10% 15%; */
 }
 
 .gallery a img:hover{
@@ -358,15 +360,15 @@ nav ul li a:visited{
 .social li{
 	display: inline;
 	font-size: 100px;
-	padding: 5%;
+	/* padding: 5%;	 */
 	color: white;
-	
 }
 .social i{
 	/* font-size: 460%; */
-	/* margin: 1%; */
+	margin: 3%;
 	/* padding: 5%; */
 	color: #F5F5F5;
+	/* background-color: blue; */
 }
 .social i:hover{
 	color: #111;
@@ -385,8 +387,6 @@ nav ul li a:visited{
 	color: white;
 	background-color: #282E34;
 	text-align: center;
-	/* padding-left: 50px; */
-	/* padding-right: 50px; */
 	font: 30px;	
 }
 
