@@ -334,7 +334,7 @@ nav ul li a:visited{
 	width: 350px;
 	/* padding-left: 100px; */
 	/* margin: 3px; */
-	/* background-color: red; */
+	background-color: red;
 	object-fit: cover;
 	/* margin: 3%; */
 }
@@ -345,7 +345,8 @@ nav ul li a:visited{
 	max-height : 80%;
 	filter: grayscale(100%);
 	transition: filter 0.8s;
-	/* padding: 10% 15%; */
+	/* margi: 10%; */
+	padding: 5% 10%;
 }
 
 .gallery a img:hover{
