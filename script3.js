@@ -24,12 +24,13 @@ document.addEventListener("scroll", function(){
 	
 
 	// var parallax = document.getElementById('bgimg-1');
+	if(window.outerWidth > 768){
 	var newPos = window.pageYOffset;
 	// var con1Offset = document.getElementById('body').offsetTop;
 	// var con2Offset = document.getElementById('bgimg-1').offsetTop;
 	// var con3Offset = document.getElementById('bgimg-1').offsetTop;
 	document.getElementById("bgimg-1").style.backgroundPosition = "center " +  -(window.pageYOffset/2)+"px";
-	
+	}
 	if(newPos >= document.getElementById("section-1").offsetTop/3 || window.outerWidth <= 768){
 		hideMenu();
 		showBurger();
