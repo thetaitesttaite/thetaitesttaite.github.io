@@ -535,7 +535,6 @@ h3 {
 .column {
   float: left;
   width: 50%;
-	
   position: relaitve;
   display: flex;
   justify-content: center;
@@ -568,12 +567,30 @@ h3 {
 				/*Contacts*/
 /* ////////////////////////////////////////////////// */
 /* ////////////////////////////////////////////////// */
-.row span{
-	padding: 5vh;
-	font-size: 30px;
-	text-align: center;
-}
 
+
+/* .row span{ */
+	/* padding: 5vh; */
+	/* font-size: 30px; */
+	/* text-align: center; */
+/* } */
+
+/* .contact_table table td{ */
+	/* text-align: center; */
+	/* background-color: black; */
+/* } */
+.contact_table{
+
+	width: 100%;
+	font-size: 3.5vh;
+	text-align:right;
+
+	 border-collapse: collapse;
+	
+}
+.contact_table td{
+
+}
 .contact_form{
 	position: relaitve;
 	display: block;
@@ -583,6 +600,7 @@ h3 {
 	padding: 20px;
 	background-color: #111;
 }
+
 .contact_form ul{
 	list-style: none;
 	padding: 0;
@@ -640,6 +658,9 @@ h3 {
     .bgimg-1, .bgimg-2, .bgimg-3 {
         background-attachment: scroll;
     }
+	.column{
+		width: 100%;
+	}
 	/* .gallery{ */
 		/* width: 50%; */
 	/* } */
