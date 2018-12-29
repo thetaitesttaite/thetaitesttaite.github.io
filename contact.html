@@ -7,7 +7,7 @@
 <link rel="shortcut icon" type="image/png" href="img/opicon.png"/>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 </head>
-<body onresize="windowResize()">
+<body>
 
 
 
@@ -26,7 +26,6 @@
 				<li><a href="casestudies.html">Case Studies </a></li>
 				<li><a href="contact.html"> Contact </a></li>
 				</ul>
-			
 			</nav>
 		</div>
 
@@ -35,24 +34,57 @@
 	<!-- <div id="title"> -->
     <!-- <span >RHYNO PRODUCTIONS</span> -->
   <!-- </div>	 -->
-			
+	 	<div class="caption">
+			<span class="border">So you want to get in touch...</span>
+		</div>
 </div>
 
-<div id="section-1">
-  <h3>So you want to get in touch...</h3>
-
-</div>
 <div class="row">
-  <div class="column" style="background-color:#aaa; display: block;">
+  <div class="column" style="display: block;">
 	<h3>Direct Contact</h3>
-	<br>
-	<ul>
-	<li>Phone Number: 123456</li>
-	<li> 
-	</ul>
+		<div class="row">
+		<span>Phone Number:</span>
+		<span><a href="tel:+64279394015">0277389078</a></span>
+		</div>
+		<div class="row">
+		<span>Email:</span>
+		<span><a href="taite93@live.com">0277389078</a></span>
+		</div>
+		<div class="row">
+		<span>Email:</span>
+		<span><a href="tel:+64279394015">0277389078</a></span>
+		</div>
+		
   </div>
-   <div class="column" style="background-color:#aaa;">
-	<h3>Or send us a message</h3>
+   <div class="column">
+	
+		<form class="contact_form">
+			<ul>
+			<li>
+				<label for="name">Name</label>
+				<input type="text" name="name" maxlength="100">
+				<span>Enter your full name here</span>
+			</li>
+			<li>
+				<label for="email">Email</label>
+				<input type="email" name="email" maxlength="100">
+				<span>Enter a valid email address</span>
+			</li>
+			<li>
+				<label for="url">Website</label>
+				<input type="url" name="url" maxlength="100">
+				<span>Your website address (eg: http://www.google.com)</span>
+			</li>
+			<li>
+				<label for="bio">About You</label>
+				<textarea name="bio" onkeyup="adjust_textarea(this)"></textarea>
+				<span>Say something about yourself</span>
+			</li>
+			<li>
+				<input type="submit" value="Send This" >
+			</li>
+			</ul>
+		</form>
 	</div>
 </div>
 
