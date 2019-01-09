@@ -679,3 +679,9 @@ h3 {
 	/* } */
 	
 }
+
+@media screen and (min-width: 1600px){
+	.gallery{
+		width: 32%;
+	}
+}
