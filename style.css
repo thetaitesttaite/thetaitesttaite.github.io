@@ -283,7 +283,7 @@ a.contact_button:hover{
 	
 	
 }
-#bgimg-1, #bgimg-2, #bgimg-3, #bgimg-4{
+#bgimg-1, #bgimg-2, #bgimg-3, #bgimg-4, #bgimg-5{
   position: relative;
 
   background-attachment: fixed;
@@ -323,6 +323,12 @@ a.contact_button:hover{
 	background-image: url("img/forestLake.jpg");
 	min-height: 400px;
 }
+#bgimg-5{
+	background-position: center 0px;
+	/* background-image: url("img/forestLake.jpg"); */
+	min-height: 30%;
+	
+}
 
 .caption {
   position: absolute;
@@ -352,23 +358,24 @@ a.contact_button:hover{
 	/* background-color: blue; */
 	/* float: left; */
 	text-align: center;
-	height: 200px;
-	width: 350px;
+	height: auto;
+	width: 49%;
 	/* padding-left: 100px; */
 	/* margin: 3px; */
 	/* background-color: red; */
 	object-fit: cover;
 	/* margin: 3%; */
+	margin: 0;
 }
 .gallery a img{
 	/*new line margin for inline block */
-	font-size: 16px;
+
 	max-width: 100%;
 	max-height : 80%;
 	filter: grayscale(100%);
 	transition: filter 0.8s;
 	/* margi: 10%; */
-	padding: 5% 10%;
+	/* padding: 5% 10%; */
 }
 
 .gallery a img:hover{
@@ -410,7 +417,8 @@ nav ul li a:visited{
 	color: white;
 	background-color: #282E34;
 	text-align: center;
-	font: 30px;	
+	font: 30px;
+	margin: 0;
 }
 
 
@@ -422,9 +430,9 @@ nav ul li a:visited{
 
 
 h3 {
-  letter-spacing: 10px;
+  letter-spacing: 1vh;
   text-transform: uppercase;
-  font: 50px "Lato", sans-serif;
+  font: 10vh "Lato", sans-serif;
   color: #111;
   text-align:center;
   position: relative;
@@ -589,7 +597,7 @@ h3 {
 	
 }
 .contact_table td{
-
+	padding-right: 50px;
 }
 .contact_form{
 	position: relaitve;
@@ -655,15 +663,15 @@ h3 {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media screen and (max-width: 768px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
         background-attachment: scroll;
     }
 	.column{
 		width: 100%;
 	}
-	/* .gallery{ */
-		/* width: 50%; */
-	/* } */
+	.gallery{
+		width: 99%;
+	}
 	/* #menu-icon{ */
 	/* margin: 0px -100px; /*padding interfering with margin on both */ 
 	/* opacity: 1; */
