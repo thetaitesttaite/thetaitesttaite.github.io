@@ -366,6 +366,7 @@ a.contact_button:hover{
 	object-fit: cover;
 	/* margin: 3%; */
 	margin: 0;
+	padding: 2%;
 }
 .gallery a img{
 	/*new line margin for inline block */
