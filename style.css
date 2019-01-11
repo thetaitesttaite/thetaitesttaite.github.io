@@ -55,13 +55,13 @@ ie its not a static header anymore its just a navbar/menu container */
 #menu-icon{
 	margin: 0 -50%; /*padding interfering with margin on both */
 	float: right;
-	width: 7vh;
+	width: 11vh;
 	height: 8vh;
 	/* padding: 0px -20px; */
 	display: block;
 	transition: all 2s ease;
 	opacity: 1;
-	background-color: blue;
+	/* background-color: blue; */
 	top: 0;
 	position: relaitve;
 	padding: 2%;
@@ -368,6 +368,7 @@ a.contact_button:hover{
 	margin: 0;
 	padding: 2%;
 }
+
 .gallery a img{
 	/*new line margin for inline block */
 
@@ -387,21 +388,24 @@ a.contact_button:hover{
 	list-style-type: none;
 	text-align: center;
 	opacity: 1;
+	margin: 0;
+	
 }
 .social li{
 	display: inline;
-	font-size: 100px;
+	font-size: 20vh;
 	/* padding: 5%;	 */
 	color: white;
+	width: 50%;
 }
 .social i{
 	/* font-size: 460%; */
-	margin: 3%;
+
 	/* padding: 5%; */
 	color: #F5F5F5;
 	/* background-color: blue; */
 }
-.social i:hover{
+.social i:hover{`
 	color: #111;
 	transition: color 0.5s;
 }
@@ -434,6 +438,14 @@ h3 {
   letter-spacing: 1vh;
   text-transform: uppercase;
   font: 10vh "Lato", sans-serif;
+  color: #111;
+  text-align:center;
+  position: relative;
+}
+h4 {
+  letter-spacing: 1vh;
+  text-transform: uppercase;
+  font: 5vh "Lato", sans-serif;
   color: #111;
   text-align:center;
   position: relative;
