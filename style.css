@@ -311,7 +311,7 @@ a.contact_button:hover{
 	background-position: center;
 	background-image: url("img/droneCity.jpg");
 	min-height: 50vh;
-
+	height: 20%;
 }
 
 #bgimg-3 {
@@ -693,9 +693,9 @@ h4 {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media screen and (max-width: 768px) {
-    /* .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 { */
-        /* background-attachment: scroll; */
-    /* } */
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+        background-attachment: scroll;
+    }
 	.column{
 		width: 100%;
 	}
