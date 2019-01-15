@@ -693,9 +693,9 @@ h4 {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media screen and (max-width: 768px) {
-    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+    /* .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 { */
         /* background-attachment: scroll; */
-    }
+    /* } */
 	.column{
 		width: 100%;
 	}
