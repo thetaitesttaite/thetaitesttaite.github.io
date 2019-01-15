@@ -19,13 +19,13 @@ ie its not a static header anymore its just a navbar/menu container */
 #static_header{
 	position: fixed;
 	width: auto;
-	height: 0%;
+	/* height: 0%; */
 	z-index: 15;
 	right: 0;
 	padding: 1% 2% 0 0;
 	/* background-color: black; */
 	/* transition: all 1s ease; */
-	/* pointer-events: none; */
+	pointer-events: none;
 	
 
 }
@@ -65,7 +65,7 @@ ie its not a static header anymore its just a navbar/menu container */
 	top: 0;
 	position: relaitve;
 	padding: 2%;
-
+	pointer-events: auto;
 }
 
 #menu-icon:hover{
@@ -159,6 +159,7 @@ ul{
 	top: 0px;
 	/* background-color: red; */
 	width: 100%;
+	pointer-events: auto;
 	
 }
 /* #u_list.side_nav{ */
@@ -310,7 +311,7 @@ a.contact_button:hover{
 	background-position: center;
 	background-image: url("img/droneCity.jpg");
 	min-height: 50vh;
-	height: 20%;
+
 }
 
 #bgimg-3 {
@@ -693,7 +694,7 @@ h4 {
 /* Turn off parallax scrolling for tablets and phones */
 @media screen and (max-width: 768px) {
     .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
-        background-attachment: scroll;
+        /* background-attachment: scroll; */
     }
 	.column{
 		width: 100%;
