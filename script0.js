@@ -7,7 +7,6 @@ var imageName;
 var elmnt;
 window.onbeforeunload = function () {
 	window.scrollTo(0, 0);
-	
 }
 window.onload = function() {
 	// document.getElementById('title').style.opacity = '1';
@@ -15,7 +14,6 @@ window.onload = function() {
 	// document.getElementById('sub_title').style.opacity = '1';
 	// var elmnt = document.getElementById('container');
 	// pc = elmnt.offsetTop;
-
 }
 
 //document.addEventListener("scroll", scrollanim);
@@ -24,6 +22,8 @@ document.addEventListener("scroll", function(){
 	
 
 	// var parallax = document.getElementById('bgimg-1');
+	var newPos = window.pageYOffset;
+	//if page is more than 780px, allow header background to paralax upward
 	if(window.outerWidth >= 780){
 	var newPos = window.pageYOffset;
 	// var con1Offset = document.getElementById('body').offsetTop;
@@ -43,13 +43,13 @@ document.addEventListener("scroll", function(){
 		hideBurger();
 		 // setInterval(enableMenu, 500);	
 	}
-	if(newPos >= (document.getElementById("section-" + section).offsetTop - window.innerHeight) + 200){
+	
+	if( newPos >= (document.getElementById("section-" + section).offsetTop - window.innerHeight) + 200){
 		// getElementById("section-1").getElementsByTagName("p").style.opacity = 1;
-		document.getElementById("section-" + section).querySelector("p").style.opacity = 1;
-		section++;
+		 document.getElementById("section-" + section).querySelector("p").style.opacity = 1;
+		 section++;
 		 
 	}
-	
 	
 
 	
@@ -163,25 +163,14 @@ function colourise(id){
 function windowResize() {
     var w = window.outerWidth;
     var h = window.outerHeight;
-	if(w <= 768){
-		hideMenu();
-		showBurger();
-	}
-	else{
-		showMenu();
-		hideBurger();
-	}
-    // var txt = "Window size: width=" + w + ", height=" + h;
-    // document.getElementById("sub_title").innerHTML = txt;
-	// document.getElementById("con1").style.height = (w/2.82);
+    var txt = "Window size: width=" + w + ", height=" + h;
+    document.getElementById("sub_title").innerHTML = txt;
+	document.getElementById("con1").style.height = (w/2.82);
 }
 
 function stats(){
 	
-	// alert("newpos:  " + window.pageYOffset + "height" + document.getElementById("section-1").offsetTop/3 + "sectionnum:  " + section);
-	// alert("window width and height" + window.outerWidth + "height " + window.outerHeight);
-	var trigger = document.getElementById("section-" + section).offsetTop - window.innerHeight;
-		alert("current page offset:   " + window.pageYOffset + "  section-    " + section +  " .... sectiontrigger:  " + trigger);
+	alert("height" + document.getElementById("section-1").offsetTop);
 }
 
 	

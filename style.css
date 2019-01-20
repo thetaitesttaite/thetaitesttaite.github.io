@@ -239,6 +239,7 @@ nav ul li a:visited{
 	/* transition: 6s letter-spacing; */
 	font-weight: 700;
 	font-size: 5vh;
+	overflow: hidden;
 	/* perhaps implement titles into h1 h2 elements for vice versa*/
 }
 
