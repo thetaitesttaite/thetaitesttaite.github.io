@@ -44,7 +44,7 @@ document.addEventListener("scroll", function(){
 		 // setInterval(enableMenu, 500);	
 	}
 	
-	if( newPos >= (document.getElementById("section-" + section).offsetTop - window.innerHeight) + 200){
+	if( newPos >= (document.getElementById("section-" + section).offsetTop - window.innerHeight)+ 400){
 		// getElementById("section-1").getElementsByTagName("p").style.opacity = 1;
 		 document.getElementById("section-" + section).querySelector("p").style.opacity = 1;
 		 section++;

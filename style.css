@@ -7,7 +7,10 @@ body, html {
   color: #777;
   background-color: #282E34;
 }
-
+a:visited{
+  color: #777;
+  text-docoration: none;
+}
 header{
 	
 	width: 100%;
@@ -209,9 +212,7 @@ nav ul li a:hover{
 	animation: flash linear 3.25s infinite;
 	color: white;
 }
-nav ul li:hover{
-	
-}
+
 
 nav ul li a:link{
 	text-decoration: none;
@@ -625,11 +626,25 @@ h4 {
 	font-size: 3.5vh;
 	text-align:right;
 
-	 border-collapse: collapse;
+	border-collapse: collapse;
+	color: white;
 	
 }
 .contact_table td{
 	padding-right: 50px;
+
+}
+.contact_table tr td a:visited{
+	color: #777;
+	text-decoration: none;
+}
+.contact_table tr td a:link{
+	color: #777;
+	text-decoration: none;
+}
+.contact_table tr td a:hover{
+	color: #777;
+	text-decoration: none;
 }
 .contact_form{
 	position: relaitve;
@@ -680,6 +695,7 @@ h4 {
 	font-size: 16px;
 	padding: 0;
 	margin-top: 10px;
+	border-radius: 10px;
 }
 .contact_form li > span{
 	/* background: #F3F3F3; */
