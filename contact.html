@@ -67,7 +67,7 @@
   </div>
    <div class="column" style="display: block;">
 		<h4>Send a Message</h4>
-		<form class="contact_form">
+		<form action="mailto:t8thegr8m8@gmail.com" method="post" enctype="text/plain" class="contact_form">
 			<ul>
 			<li>
 				<label for="name">Name</label>
@@ -80,19 +80,24 @@
 				<span>Enter a valid email address</span>
 			</li>
 			<li>
-				<label for="url">Website</label>
-				<input type="url" name="url" maxlength="100">
-				<span>Your website address (eg: http://www.google.com)</span>
+				<label for="phone">Phone Number</label>
+				<!-- <input type="url" name="url" maxlength="100"> -->
+				<!-- <input type="tel" id="phone" name="phone"  -->
+				<!-- pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required> -->
+				<input type="tel" name="phone">
+				<span>Your mobile number (eg: 123-456-2546)</span>
 			</li>
 			<li>
-				<label for="bio">About You</label>
-				<textarea name="bio" onkeyup="adjust_textarea(this)"></textarea>
-				<span>Say something about yourself</span>
+				<label for="about">About You</label>
+				<textarea style="max-width: 100%; min-width: 100%;" name="about" onkeyup="adjust_textarea(this)"></textarea>
+				<span>Let us know a bit about yourself and what you would like from us</span>
 			</li>
 			<li>
-				<input type="submit" value="Send This" >
+				<input type="submit" name="submit" value="Send" >
 			</li>
 			</ul>
+			
+	
 		</form>
 	</div>
 </div>

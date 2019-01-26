@@ -287,6 +287,33 @@ a.contact_button:hover{
 	
 	
 }
+.details{
+	position: absolute;
+	text-align: center;
+	/* background-color: yellow; */
+	display: inline-block;
+	width: 100%;
+	top: 90%;
+	transition: all cubic-bezier(0.31,-0.67, 0.63, 2.48) 1s;
+}
+
+.details span{
+	padding: 3em;
+	color: white;
+	
+	
+}
+.details span a:link{
+	color: white;
+	text-decoration: none;
+	font-weight: 100;
+	font-size: 1.3em;
+	
+}
+.hide_top{
+	opacity: 0;
+	transform: translate(0, -100px);	
+}
 #bgimg-1, #bgimg-2, #bgimg-3, #bgimg-4, #bgimg-5{
   position: relative;
 
@@ -371,6 +398,7 @@ a.contact_button:hover{
 	/* margin: 3%; */
 	margin: 0;
 	padding: 2%;
+	transition: transform 1s ease;
 }
 
 .gallery a img{
@@ -387,6 +415,11 @@ a.contact_button:hover{
 .gallery a img:hover{
 	filter: grayscale(0%);
 	transition: filter 0.8s;
+}
+
+.hide_left{
+	/* transform: translateX(-100%); */
+	opacity: 1;
 }
 .social{
 	list-style-type: none;
