@@ -125,8 +125,8 @@ function hideMenu(){
 		u_list.classList.add("hide_nav");
 	}
 	/* show contact details below contact button */
-	var contact_details = document.getElementById("contact-details");
-	contact_details.classList.remove("hide_top");
+	// var contact_details = document.getElementById("contact-details");
+	// contact_details.classList.remove("hide_top");
 }
 function showMenu(){
 	// var menuList = document.getElementById("static_header").querySelectorAll("nav ul li");

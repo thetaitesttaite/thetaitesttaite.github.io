@@ -194,6 +194,14 @@ nav ul li{
 	/* padding: 15px; */
 	/* background-color: blue; */
 	margin-left: -40px;
+	width: 120%
+	
+}
+#u_list.side_nav li a{
+	display: block;
+	/* padding: 15px; */
+	/* background-color: blue; */
+	/* margin-left: -40px; */
 	
 }
 #u_list.side_nav li:hover{
@@ -204,7 +212,15 @@ nav ul li{
 	background-color: #282E34;
 	
 }
-
+#u_list.side_nav li a:hover{
+	/* display: block; */
+	/* padding: 15px; */
+	/* background-color: #282E34; */
+	/* margin-left: -40px; */
+	background-color: r#282E34ed;
+	
+	
+}
 
 nav ul li a:hover{
 	font-weight: 900;
@@ -267,6 +283,7 @@ nav ul li a:visited{
 	display: inline-block;
 	width: 100%;
 	top: 70%;
+	
 }
 
 a.contact_button{
@@ -312,7 +329,9 @@ a.contact_button:hover{
 }
 .hide_top{
 	opacity: 0;
-	transform: translate(0, -100px);	
+	transform: translate(0, -3em);
+	pointer-events: none;
+	
 }
 #bgimg-1, #bgimg-2, #bgimg-3, #bgimg-4, #bgimg-5{
   position: relative;
@@ -760,7 +779,7 @@ h4 {
 	
 }
 
-@media screen and (min-width: 1600px){
+@media screen and (min-width: 1300px){
 	.gallery{
 		width: 32%;
 	}
