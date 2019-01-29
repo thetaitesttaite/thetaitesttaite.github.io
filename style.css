@@ -264,15 +264,15 @@ nav ul li a:visited{
 
 @keyframes fadeIn{
 	0%{
-	letter-spacing: 2vh;
+	letter-spacing: -1vw;
     opacity: 0;
 	}
 	20%{
-    letter-spacing: 3vh;
+    letter-spacing: 2vw;
     opacity: 1;
 	}
 	100%{
-    letter-spacing: 5vh;
+    letter-spacing: 3vw;
     opacity: 1;
 	}
 }
