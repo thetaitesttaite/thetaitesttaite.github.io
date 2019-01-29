@@ -1,69 +1,6 @@
-function moveToSelected(element) {
-
-  if (element == "next") {
-    var selected = $(".selected").next();
-  } else if (element == "prev") {
-    var selected = $(".selected").prev();
-  } else {
-    var selected = element;
-  }
-
-  var next = $(selected).next();
-  var prev = $(selected).prev();
-  var prevSecond = $(prev).prev();
-  var nextSecond = $(next).next();
-
-  $(selected).removeClass().addClass("selected");
-
-  $(prev).removeClass().addClass("prev");
-  $(next).removeClass().addClass("next");
-
-  $(nextSecond).removeClass().addClass("nextRightSecond");
-  $(prevSecond).removeClass().addClass("prevLeftSecond");
-
-  $(nextSecond).nextAll().removeClass().addClass('hideRight');
-  $(prevSecond).prevAll().removeClass().addClass('hideLeft');
-
+window.onbeforeunload = function () {
+	window.scrollTo(0, 0);
 }
-
-// Eventos teclado
-$(document).keydown(function(e) {
-    switch(e.which) {
-        case 37: // left
-        moveToSelected('prev');
-        break;
-
-        case 39: // right
-        moveToSelected('next');
-        break;
-
-        default: return;
-    }
-    e.preventDefault();
-});
-
-$(document).ready(function(){
-    $("#carousel1 div").click(function(){
-		moveToSelected($(this));
-    });
-});
-$(document).ready(function(){
-    $("#carousel2 div").click(function(){
-		moveToSelected($(this));
-    });
-});
-/*doesnt work */
-// $('#carousel div').click(function() {
-  // moveToSelected($(this));
-// });
-$('#prev').click(function() {
-  moveToSelected('prev');
-});
-
-$('#next').click(function() {
-  moveToSelected('next');
-});
-
 
 document.addEventListener("scroll", function(){
 	var newPos = window.pageYOffset;
@@ -93,7 +30,7 @@ document.addEventListener("scroll", function(){
 	
 	});
 	
-	function expandBurger(){
+function expandBurger(){
 	var menu_icon = document.getElementById("menu-icon");
 	var static_header = document.getElementById("static_header");
 	var u_list = document.getElementById("u_list");
