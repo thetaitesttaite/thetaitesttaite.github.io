@@ -59,8 +59,8 @@ ie its not a static header anymore its just a navbar/menu container */
 #menu-icon{
 	margin: 0 -50%; /*padding interfering with margin on both */
 	float: right;
-	width: 11vh;
-	height: 8vh;
+	width: 5em;
+	height: 5em;
 	/* padding: 0px -20px; */
 	display: block;
 	transition: all 2s ease;
@@ -68,8 +68,8 @@ ie its not a static header anymore its just a navbar/menu container */
 	/* background-color: blue; */
 	top: 0;
 	position: relaitve;
-	padding: 2%;
 	pointer-events: auto;
+	padding-top: 1em;
 }
 
 #menu-icon:hover{
@@ -77,8 +77,9 @@ ie its not a static header anymore its just a navbar/menu container */
 }
 .line{
 	background: white;
-	width: 10%;
-	height: 1vh;
+	width: 4em;
+	height: 0.6em;
+	margin: 0;
 	/* margin: 8px auto; */
 	position: absolute;
 	border-radius:50px;
@@ -87,13 +88,13 @@ ie its not a static header anymore its just a navbar/menu container */
 	
 }
 .linetop{
-	margin-top: -2%;
+	margin-top: 0em;
 }
 .linemid{
-	margin-top: 2%;
+	margin-top: 1.5em;
 }
 .linebot{
-	margin-top: 6%;
+	margin-top: 3em;
 }
 #menu-icon.close{
 	/* float: left; */
@@ -112,8 +113,8 @@ ie its not a static header anymore its just a navbar/menu container */
     -webkit-transform: rotate(45deg); /* Safari */
 	-o-transform: rotate(45deg);
     transform: rotate(45deg);
-	margin-top: 4%;
-	width: 15%;
+	margin-top: 1.5em;
+	width: 4em;
 	/* -moz-transform: translate(4); */
 	/* -ms-transform: rotate(45deg); /* IE 9 */ 
     /* -webkit-transform: rotate(45deg); /* Safari */ 
@@ -126,8 +127,8 @@ ie its not a static header anymore its just a navbar/menu container */
     -webkit-transform: rotate(-45deg); /* Safari */
 	-o-transform: rotate(-45deg);
     transform: rotate(-45deg);
-	margin-top: 4%;
-	width: 15%;
+	margin-top: 1.5em;
+	width: 4em;
 	/* -moz-transform: translate(4); */
 	/* -ms-transform: rotate(45deg); /* IE 9 */ 
     /* -webkit-transform: rotate(45deg); /* Safari */ 
