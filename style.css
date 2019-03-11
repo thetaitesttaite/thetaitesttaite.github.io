@@ -30,7 +30,6 @@ ie its not a static header anymore its just a navbar/menu container */
 	/* transition: all 1s ease; */
 	pointer-events: none;
 	
-
 }
 #static_header.open_menu{
 	height: 100%;
@@ -65,7 +64,7 @@ ie its not a static header anymore its just a navbar/menu container */
 	/* display: block; */
 	transition: all 2s ease;
 	opacity: 1;
-	background-color: blue;
+	/* background-color: blue; */
 	top: 0;
 	position: relaitve;
 	pointer-events: auto;
