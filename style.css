@@ -49,7 +49,7 @@ ie its not a static header anymore its just a navbar/menu container */
 	/*change sizing*/
 	width: 15vh;
 	height: 10vh;
-	background: url(img/rhyno1.png) no-repeat center;
+	background: url(img/yarn1.png) no-repeat center;
 	background-size: 60%;
 	margin-top: 2%;
 	
@@ -335,6 +335,53 @@ a.contact_button:hover{
 	pointer-events: none;
 	
 }
+#contact-section{
+
+	position: fixed;
+	float: right;
+	border-radius: 50%;
+	z-index: 15;
+	/* margin: 40px -20px; */
+	/*change sizing*/
+	width: 50vh;
+	height: 50vh;
+	background: #111;
+	bottom: -25%;
+	right: -15%;
+	/* margin: 45% 85%; */
+	float: right;
+	transition: all 0.35s ease;
+}
+#contact-section:hover{
+
+	transform: scale(1.5);
+}
+#contact-section:hover #contact-logo {
+	display:none;
+}
+
+#contact-logo{
+	position: relative;
+	top: 15%;
+	left: 25%;
+}
+
+#contact-logo i{
+
+	font-size: 10vh;
+
+}
+.contact-info{
+	position:relaitve;
+	width: 50%;
+	height: 50%;
+	background:white;
+}
+.contact-info i, .contact-info p{
+	float: right;
+	font-size: 2vh;
+	
+}
 #bgimg-1, #bgimg-2, #bgimg-3, #bgimg-4, #bgimg-5{
   position: relative;
 
@@ -484,7 +531,9 @@ nav ul li a:visited{
 	font: 30px;
 	margin: 0;
 	
+	
 }
+
 
 
 #section-1 p, #section-2 p, #section-3 p{
@@ -510,6 +559,255 @@ h4 {
   text-align:center;
   position: relative;
 }
+
+/* client gallery 1*/
+.grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 0;
+	justify-content: center;
+	align-items: center;
+	position: relaitve;
+	transition: all 1s;
+	
+}
+.first{
+	grid-column:1/2;
+	overflow: hidden;
+
+}
+.second{
+	grid-column:2/2;
+	overflow: hidden;
+}
+
+.first img, .second img{
+	width: 100%;
+	display: block;
+	z-index: 1;
+}
+.first img:hover, .second img:hover{
+	transform: scale(1.5);
+	filter: blur(2px);
+	z-index: 0;
+	
+}
+.first p, .second p{
+	display: block;
+	pointer-events: none;
+	text-align: center;
+	z-index: 2;
+	opacity: 0;
+	transition: opacity 1s ease;
+	font-size: 4vw;
+	padding: 7vh 0;
+	
+}
+.first:hover > p, .second:hover > p { 
+	opacity: 1;
+}
+
+/* client gallery 2*/
+.first div, .second div{
+	width: 50%;
+	height: 50%;
+	
+	overflow: hidden;
+	opacity: 1;
+	z-index: -1;
+	
+}
+.first:hover > div, .second:hover > div{
+	z-index: 10;
+}
+
+
+
+
+
+.first2, .second2{
+	width: 100%;
+	display: block;
+	z-index: 1;
+	height: 5vh;
+	
+}
+#case1{
+  position: relative;
+  height: 500px;
+  
+  width: 100%;
+  background-image: url(img/droneCity.jpg);
+   background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.cardHolder{
+	position: absolute;   pointer-events: none; text-align: center; background-color:blue;
+
+}
+/* client gallery 3*/
+.grid2{
+	display: grid;
+	position: relative;
+	grid-template-columns: 1f 1f;
+	justify-content: center;
+	align-items: center;
+	
+	
+}
+.one{
+	grid-column: 1/2;
+	
+	
+}
+.two{
+	grid-column:2/2;
+
+}
+.tri-grid{
+	position: relative;
+	display: grid;
+	gird-template-columns: 1f 1f 1f;
+	/* background-image: url(img/ocean.jpg); */
+	
+	width: 100%;
+	height: 500px;
+	/* height auto? */
+	z-index: 1;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/* .tri-grid div{ */
+
+
+	/* height: 200px; */
+	/* width: 200px; */
+	
+	/* grid-column:2/3; */
+	/* grid-row:2/3; */
+	/* position: relative; */
+	/* box-shadow: 2px 2px 5px #404040; */
+
+	/* background-image: url(img/rhyno1.png); */
+	/* background-repeat: no-repeat; */
+	/* background-position: center; */
+	/* background-color: #111; */
+	/* overflow:hidden; */
+	/* z-index:2; */
+/* } */
+/* gallery 5 */
+.tri-grid .ellipse{
+
+
+	height: 300px;
+	width: 300px;
+	
+	grid-column:2/3;
+	grid-row:2/3;
+	position: relative;
+	box-shadow: 2px 2px 5px #111;
+	border-radius: 50%;
+	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #111;
+	transition: all 1s;
+	z-index:2;
+}
+.ellipse img{
+	width: 100%;
+	
+}
+.ellipse:hover, .ellipse div{
+	transform: rotateY(180deg);
+	
+}
+.tri-grid2{
+	position: relative;
+	display: grid;
+	gird-template-columns: 1f 1f 1f;
+	width: 100%;
+	height: auto;
+}
+
+.cardContainer{
+	position: relative;
+	width: 250px;
+	height: 320px;
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+.cardContainer:hover{
+	tranform: rotateY(180deg);
+}
+.theCard{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d; 
+	transition: all 0.5s ease;
+	background-color:black;
+	border-radius: 10px;
+}
+
+.theCard:hover{
+	transform: rotateY(180deg);	
+}
+.theBack{
+	 position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	backface-visibility: hidden;
+	overflow: hidden;
+	background: #111;
+	color: #333;
+	text-align: center;
+	transform: rotateY(180deg);
+}
+.theFront{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	backface-visibility: hidden;
+	text-align: center;
+	overflow: hidden;
+
+	color: #111;
+}
+
+.one:hover > .tri-grid, .two:hover > .tri-grid{
+	
+ /* transform: scale(1.5); */
+	
+}
+.one:hover > .tri-grid div, .two:hover > .tri-grid div{
+	opacity: 1;
+	cursor: pointer;
+}
+
+
+
+/* client gallery 4*/
+
+.first div:hover, .first img{
+	transform: scale(2);
+	transition: all 1s;
+}
+.second div:hover, .second img{
+	transform: scale(2);
+	transition: all 1s;
+}
+
+
+/* make .grid img instead///////////////////*/
+
 
 /* ////////////////////////////////////////////////// */
 /* ////////////////////////////////////////////////// */
@@ -658,7 +956,8 @@ h4 {
 	width: 100%;
 	transition: all 2s;
 	z-index: 2;
- }
+}
+
  /* ////////////////////////////////////////////////// */
 /* ////////////////////////////////////////////////// */
 				/*Contacts*/
@@ -779,6 +1078,18 @@ h4 {
 	#menu-icon{
 		/* width: 50px; */
 		/* height: 40px; */
+	}
+	.grid{
+		grid-template-columns: 1fr;
+	}
+	.first, .second{
+		grid-column:1/1;
+	}
+	.first div, .second div{
+		width: 100%;	
+	}
+	.one, .two{
+		grid-column:1/1;
 	}
 	
 }

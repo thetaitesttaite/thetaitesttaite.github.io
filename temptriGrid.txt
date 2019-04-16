@@ -1,0 +1,77 @@
+<div >
+	
+	<h3> case studies 3 </h3>
+	
+	<div class="grid2" >
+		<div class="one" >
+		<div class="tri-grid">
+			<div style="background-color:black;"></div>
+			<img  src="img/droneNight.jpg">
+		</div>
+		
+		
+		</div>
+		<div class="two">	
+			<div class="tri-grid" > 
+			<div style="background-color:white;"></div>
+			<img  src="img/forestLake.jpg">
+		</div>
+		<!-- <img src="img/droneCity.jpg" alt="Forest Lake"> -->
+		</div>
+		<div class="one" >
+		<div class="tri-grid"> 
+			<div style="background-color:white;"></div>
+			<img style="width: 100%; height: auto; position: absolute; z-index: 1;" src="img/droneNight.jpg">
+		
+
+		</div>
+		
+		
+		</div>
+		<div class="two">	
+			<div class="tri-grid"> 
+			<div style="background-color:white;"></div>
+			<img style="width: 100%; height: auto; position: absolute; z-index: 1;" src="img/droneNight.jpg">
+			
+		</div>
+		<!-- <img src="img/droneCity.jpg" alt="Forest Lake"> -->
+		</div>
+		
+	
+	</div>
+	<div class="grid2" >
+		<!-- <div class="one" > -->
+		<!-- <div class="tri-grid">  -->
+			<!-- <div style="background-color:white;"></div> -->
+			<!-- <img style=" width: 100%; position: absolute; z-index: 1;" src="img/droneCity.jpg"> -->
+			
+		<!-- </div> -->
+		
+		
+		<!-- </div> -->
+		<!-- <div class="two">	 -->
+			<!-- <div class="tri-grid">  -->
+			<!-- <div style="background-color:white;"></div> -->
+		<!-- </div> -->
+	
+		<!-- </div> -->
+		<!-- <div class="one" > -->
+		<!-- <div class="tri-grid">  -->
+			<!-- <div style="background-color:white;"></div> -->
+		<!-- </div> -->
+		
+		
+		<!-- </div> -->
+		<!-- <div class="two">	 -->
+			<!-- <div class="tri-grid">  -->
+			
+			<!-- <div style="background-color:white;"></div> -->
+		<!-- </div> -->
+		
+		<!-- </div> -->
+		
+	
+	</div>
+
+	
+</div>

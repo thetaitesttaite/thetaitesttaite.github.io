@@ -183,7 +183,10 @@ function stats(){
 	// document.querySelectorAll(.hide_left:nth-child(1)).style.opacity = 1;
 	// alert("height" + document.getElementById("section-1").offsetTop);
 }
-
+function galleryFilter(){
+	
+	
+}
 	
 
 

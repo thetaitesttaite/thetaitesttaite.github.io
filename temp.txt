@@ -1,0 +1,26 @@
+<div class="" style="height: auto;">
+		<div class="column" style="background-color:#aaa;">
+
+    <p style="color: white; position:absolute; width: 50%;">Whole wound bilities. </p>
+	<img src="img/forestLake.jpg" alt="Forest Lake">
+	
+  </div>
+   <div class="column" style="background-color:#aaa;">
+	<p style="color: white; position:absolute; width: 50%;">Whjfkdjhakhfjkasies. </p>
+	<img src="img/ocean.jpg" alt="Forest Lake">
+	
+
+  </div>
+<!-- </div> -->
+<!-- <div class="row"> -->
+  <div class="column" style="background-color:#aaa;">
+
+    <p style="color: white; position:absolute; width: 50%;">dfsahjkhfdjkahfjkahdsjkfhasjkdfW </p>
+	<img src="img/earth.jpg" alt="Forest Lake">
+  </div>
+   <div class="column" style="background-color:#aaa;">
+
+    <p style="color: white; position:absolute; width: 50%;">listening do abilities. </p>
+	<img src="img/earth2.jpg" alt="Forest Lake">
+  </div>
+	</div>
