@@ -1,0 +1,322 @@
+:root {
+	--main-bg-color: coral;
+	--main-txt-color: #111;  
+	--main-padding: 15px;
+	--primary-color: #00CCCC;
+	--background-color: #ededed;
+	--blue-background: #3b5f99;
+}
+*{
+	font-size: 16px;
+	color: #111;
+
+}
+h3{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+h2{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.banner{
+	text-align: center;
+	height: 149px;
+	background-color: #DDFFFF;
+	height: auto;
+}
+.logo{
+	position: absolute;
+	display: block;
+	z-index: 2;
+	height: 250px;
+	width: auto;
+	background-image: url(img/simple1.png);
+}
+.contact_info{
+	position: relative;
+	padding: 20px;
+	text-align: right;
+	/* padding-right: 20px; */
+}
+.contact_info li{
+	text-decoration: none;
+	list-style: none;
+}
+.contact_info li a{
+	text-decoration: none;
+	color: var(--main-txt-color);
+}
+
+.banner_content{
+	text-align: center;
+	position:relative;
+	overflow: hidden;
+}
+.banner_content img{
+	position: relative;
+	width: 100%;
+	transform: scale(1.5);
+}
+.banner_content h1{
+	padding: 30vh 2vw;
+	position: absolute;
+	z-index:1;
+	text-align: center;
+	color: var(--primary-color);
+	font-size: 5vw;
+	font-weight: 800;
+	letter-spacing: 0.5vw;
+}
+
+.mainBody{
+	background-color:var(--background-color);
+	position: relative;
+	text-align: center;
+	content-align: center;
+}
+.buildingWorks{
+	padding: 50px 0;
+}
+.buildingWorks img{
+	
+}
+.buildingWorks div{
+	
+	background-size: cover;
+	width: 100%;
+	height: 320px;
+	overflow: hidden;
+}
+.buildingWorks p{
+	text-align: justify;
+}
+
+/* card section */
+#cards > div{
+	opacity: 0;
+	transform: translateY(-150px);
+	transition: opacity 0.4s ease;
+	/* animation: bounce 2s ease-out forwards; */
+}
+@keyframes bounce {
+  
+  0% {
+    transform: translateY(-150px);
+  }
+  
+  35% {
+    transform: translateY(0px);
+  }
+  48%{
+	transform: translateY(-80px); 
+  }
+  55%{
+	transform: translateY(0px);
+  }
+  70%{
+	transform: translateY(-40px);
+  }
+  80%{
+	transform: translateY(0px);
+  }
+  85%{
+	 transform: translateY(-20px);
+  }
+  90%{
+	 transform: translateY(0px);
+  }
+  95%{
+	 transform: translateY(-5px); 
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.tri-grid{
+	position: relative;
+	display: grid;
+	gird-template-columns: 1f 1f 1f;
+	/* background-image: url(img/ocean.jpg); */
+	grid-row-gap: 10em;
+	/* width: 100%; */
+	/* height: 500px;*/
+	/* height auto? */
+	z-index: 1;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.cardContainer{
+	position: relative;
+	width: 250px;
+	height: 250px;
+	grid-column: 2/3;
+	grid-row: 2/3;
+	/* top: 2000px; */
+}
+.cardContainer:hover{
+	tranform: rotateY(180deg);
+}
+.showCard{
+	opacity: 0;
+	transform: translateY(-20%);
+	transition: all 2s;
+}
+.theCard{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d; 
+	transition: all 1s ease;
+	background-color:#111;
+	border-radius: 50%;
+}
+.cardContainer:hover .theCard{
+	transform: rotateY(180deg);
+	border-radius: 10px;
+}
+.cardContainer:hover .theBack{
+	transform: rotateY(180deg);
+	border-radius: 10px;
+}
+.theBack{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: all 1s ease;
+	backface-visibility: hidden;
+	overflow: hidden;
+	background: var(--blue-background);
+	color: #111;
+	text-align: center;
+	transform: rotateY(180deg);
+	border-radius: 50%;
+	padding: 5%;
+}
+.theBack p{
+	color: white;
+}
+.theFront{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	backface-visibility: hidden;
+	text-align: center;
+	overflow: hidden;
+	border-radius: 50%;
+	color: var(--blue-background);
+}
+.theFront i{
+	padding-top: 10%;
+	font-size: 100px;
+	color: var(--blue-background);
+}
+.theFront h3{
+	padding-top: 10px;
+}
+
+/*slider */
+.orbit-image{
+	height: 700px; 
+	background-size: cover;
+}
+
+/*SURVEY*/
+.survey{
+	text-align: center;	
+}
+.survey ul li{
+	list-style: none;
+	text-decoration: none;
+}
+.survey p{
+	/* padding-left: 20px; */
+	/* padding-right: 20px; */
+}
+.textBody{
+
+	text-align: center;
+	background-color:var(--background-color);
+}
+.center_col{
+	position: relative;
+	padding-bottom: 2em;
+	grid-column: 1/2;
+}
+#res, #com{
+	opacity: 0;
+	transition: all 1s ease;
+}
+
+/*contact form*/
+
+.form-floating-label {
+  position: relative;
+  
+}
+
+.form-floating-label [type='text'],
+.form-floating-label [type='password'],
+.form-floating-label [type='date'],
+.form-floating-label [type='datetime'],
+.form-floating-label [type='datetime-local'],
+.form-floating-label [type='month'],
+.form-floating-label [type='week'],
+.form-floating-label [type='email'],
+.form-floating-label [type='number'],
+.form-floating-label [type='search'],
+.form-floating-label [type='tel'],
+.form-floating-label [type='time'],
+.form-floating-label [type='url'],
+.form-floating-label [type='color'],
+.form-floating-label textarea {
+  margin-bottom: 0;
+  color: #8a8a8a;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 30px 1rem 1rem 25px;
+}
+
+.form-floating-label label {
+  color: #cacaca;
+  font-size: 18px;
+  position: absolute;
+  pointer-events: none;
+  left: 25px;
+  bottom: 0;
+  transition: all 0.2s ease-in;
+  font-weight: 300;
+}
+
+.form-floating-label textarea ~ label {
+  top: 20px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.form-floating-label input:focus ~ label,
+.form-floating-label input:disabled[value] ~ label,
+.form-floating-label.has-value input ~ label {
+  top: 0;
+  font-size: 14px;
+  color: dodgerblue;
+  font-weight: 400;
+}
+
+.form-floating-label textarea:focus ~ label,
+.form-floating-label.has-value textarea ~ label {
+  top: 0;
+  font-size: 14px;
+  color: dodgerblue;
+  font-weight: 400;
+}
+
+
+
+
+
