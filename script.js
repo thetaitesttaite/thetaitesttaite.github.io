@@ -11,12 +11,12 @@ document.addEventListener("scroll", function(){
 	if(window.outerWidth >= 780){
 	var newPos = window.pageYOffset;
 
-	document.getElementById("background").style.left =  +(window.pageYOffset/2)+"px";
+	document.getElementById("background").style.left =  +(window.pageYOffset/4)+"px";
 	}
 	
 	if(window.pageYOffset >= document.getElementById("cards").offsetTop - 800){
 		
-		// alert("hello bitch");
+
 		
 		// document.getElementById("cards").style.opacity = 1;
 		// document.getElementById("cards").style.transform = "translateY(0%)";
@@ -24,10 +24,10 @@ document.addEventListener("scroll", function(){
 		// document.getElementById("cards").querySelector("tri-grid").style.opacity = 1;
 		
 		
-		if(first === true){
-			first = false;
-			setCountdown();
-		}
+		// if(first === true){
+			// first = false;
+			// setCountdown();
+		// }
 		
 		
 		
